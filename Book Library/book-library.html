@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Book Library ::</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <style>
+        body{
+            background-color: #ffc845;
+        }
+        .header{
+            text-align: center;
+            color: #00205b;
+            padding-top: 30px;
+        }
+        hr{
+            border-top: 3px solid #00205b;
+        }
+        table{
+            width: 100%;
+        }
+        table th{
+            font-size: 25px;
+        }
+        .main-table th {
+            padding-top: 12px;
+            padding-bottom: 12px;
+            text-align: left;
+            background-color: #4CAF50;
+            color: white;
+        }
+        .main-table td, .main-table th {
+            border: 1px solid #ddd;
+            padding: 8px;
+        }
+        .center{
+            text-align: center;
+        }
+        .pagination {
+            display: inline-block;
+            }
+
+        .pagination a {
+            color: black;
+            float: left;
+            padding: 8px 16px;
+            text-decoration: none;
+        }
+
+        .pagination a.active {
+            background-color: #4CAF50;
+            color: white;
+            border-radius: 5px;
+        }
+
+        .pagination a:hover:not(.active) {
+            background-color: #ddd;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col header">
+                <h1>Welcom to the virtual book library</h1><hr>
+            </div>
+        </div>
+        <div class="center">
+            <div class="pagination">
+                <a href="#">&laquo;</a>
+                <a href="#" id="page-1">1</a>
+                <a href="#" id="page-2">2</a>
+                <a href="#" id="page-3">3</a>
+                <a href="#" id="page-4">4</a>
+                <a href="#" id="page-5">5</a>
+                <a href="#" id="page-6">6</a>
+                <a href="#" id="page-7">7</a>
+                <a href="#" id="page-8">8</a>
+                <a href="#" id="page-9">9</a>
+                <a href="#" id="page-10">10</a>
+                <a href="#">&raquo;</a>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col">
+                <table class="main-table">
+                    <tr>
+                        <th>S.No</th>
+                        <th>Book Name</th>
+                        <th>Language</th>
+                        <th>Author</th>
+                        <th>Country</th>
+                        <th>Year</th>
+                        <th>Wiki-Link</th>
+                        <th>Page No.</th>
+                    </tr>
+                </table>
+            </div>
+        </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+    <script src="book-library.js"></script>
+</body>
+</html>

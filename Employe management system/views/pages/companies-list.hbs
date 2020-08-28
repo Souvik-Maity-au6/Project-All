@@ -1,0 +1,16 @@
+<h1>Companies List ::</h1>
+<table>
+    <tbody>
+        {{#each companies}}
+        <tr>
+            <td>{{this.name}}</td>
+            <td><a href="/company-details/{{this._id}}">view details</a></td>
+            {{#if resignStatus}}
+            <td>
+                <form action="/join-company/{{this._id}}"><button type="submit">join company</button></form></a>
+            </td>
+            {{/if}}
+        </tr>
+        {{/each}}
+    </tbody>
+</table>

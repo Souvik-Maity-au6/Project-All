@@ -1,0 +1,85 @@
+body{
+    background-color: burlywood;
+}
+
+.footer-container{
+    position: relative;
+    top: 100%;
+    bottom: 0;
+    
+}
+
+.footer-header{
+    position: absolute;
+    background-color: #ffc168;
+    height: 50px;
+    width: 100%;
+    top: 100%;
+    bottom: 0;
+    text-align: center;
+}
+.footer-header p {
+    display: inline-block;
+    padding-top: 12px;
+   
+}
+.footer-line {
+     border-right: 2px solid black;
+     padding-right: 5px;
+}
+
+/* -------------------------------------------------------------main layout page------------------------------------------- */
+
+.main-header{
+    text-align: center;
+    margin-top: 200px;
+    font-size: 18px;
+    padding-bottom: 350px;
+}
+/* -------------------------------------------------------------registration------------------------------------------------- */
+.main-div{
+    border: 1px solid black;
+}
+.register-user{
+    padding-bottom: 240px;
+}
+
+/* ---------------------------------------------Login--------------------------------------------------------- */
+
+.login-user{
+    padding-bottom: 325px;
+}
+
+/* ---------------------------------------------Dashboard-------------------------------------------------------- */
+
+.welcome-header{
+    margin-top: 250px;
+    padding-bottom: 285px;
+    text-align: center;
+}
+.createblog-button{
+    padding: 10px;
+}
+
+
+
+.dashboard-container{
+    text-align: center;
+}
+
+.edit-blog{
+    margin-left: -100px;
+}
+.container-fluid{
+    margin-bottom: 165px;
+}
+/* ------------------------------------------------create blog----------------------- */
+
+.create-blog{
+    padding-bottom: 224px;
+}
+
+/* ---------------------------------------------------------------updare blog---------------------- */
+.blog-update{
+    padding-bottom: 195px;
+}

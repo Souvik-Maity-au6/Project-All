@@ -1,0 +1,14 @@
+<a href="/companies-list"><button>Companies List</button></a>
+<a href="/create-company"><button>Create Company</button></a>
+
+Name:{{userName}}
+Current-Company:{{companyName}}
+joining-date:{{joinedDate}} <span><form action="/leave-company/{{this.id}}"><button type="submit">Leave Company</button></form></span>
+Past-Companies:
+{{#if length}}
+{{#each pastCompanies}}
+name:{{this.name}}
+joinig-date:{{this.joinedDate}}
+resigned-date:{{this.resignedDate}}
+{{/each}}
+{{/if}}

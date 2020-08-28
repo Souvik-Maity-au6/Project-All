@@ -1,0 +1,22 @@
+.page-container{
+    min-height: calc(100vh - 106px - 30px);
+    background-color: #74d2e7;
+    
+}
+
+.form-container{
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    font-size: large;
+    font-weight: bold;
+}
+.registratin-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: large;
+}

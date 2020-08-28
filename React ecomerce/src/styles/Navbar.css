@@ -1,0 +1,9 @@
+.cart-box{
+    color: azure;
+}
+
+.cart-box > p {
+    display: inline-block;
+    font-size: 30px;
+    margin-top: 12px;
+}

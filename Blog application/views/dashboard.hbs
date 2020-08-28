@@ -1,0 +1,42 @@
+{{#if length}}
+    <div class="container-fluid">
+        <div class="dashboard-container p-3 row">
+            <div class="main-blog-header col-9">
+                <h2>Your Blogs ::</h2>
+            </div>
+            <div class="add-blog col-3">
+                <a href='/createblog'><button type="button" class="btn btn-primary btn-lg">Add a new Blog</button></a>
+            </div>
+        </div>
+        <div class="blog-container">
+            <ul>
+                {{#each blogs}}
+                    <div class="row pb-3">
+                        <div class="col-6">
+                            <li><h4>{{this.title}} :</h4></li>
+                        </div>
+                    <div class="edit-blog col-2">
+                        <a href={{constructUpdate}}>
+                            <button type="button" class="btn btn-primary">Edit Blog</button>
+                        </a>
+                    </div>
+                    <div class="delete-blog col-2">
+                        <form action={{constructDelete}} method="POST">
+                            <input type="submit" class="btn btn-danger" value="Delete Blog" />
+                        </form>
+                    </div>
+                    </div>
+                    <li><p>{{this.body}}</p></li>
+                {{/each}}
+            </ul>
+        </div>
+    </div>
+    {{else}}
+    <div class="welcome-header">
+        <h1>Welcome {{name}} Write your first Blog</h1>
+        <div class="createblog-button">
+            <a href="/createblog"><button type="button" class="btn btn-primary btn-lg">Create Blog</button></a>
+        </div>
+    </div>
+    <div></div>
+{{/if}}

@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Curnecy Converter ::</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <style>
+        *{padding: 0; margin: 0; box-sizing: border-box;}
+        body{
+            background-color: #f48924;
+        }
+        .header{
+            color: #00112c;
+        }
+        hr{
+            border: 2px solid #00112c ;
+        }
+        label{
+            color:#00112c ;
+            font-size: 30px;
+            font-weight: 600;
+        }
+        input[type=text], select {
+            width: 100%;
+            padding: 12px 20px;
+            margin: 8px 0;
+            display: inline-block;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box;
+        }
+        input[type=submit] {
+            width: 50%;
+            background-color: #050f2c;
+            color: white;
+            padding: 13px 20px;
+            margin: 8px 0;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 20px;
+        }
+        input[type=submit]:hover {
+            background-color: #013ca6;
+        }
+        .secondary{
+            margin-left: 190px;
+        }
+        .display{
+            color: #050f2c;
+            text-align: center;
+            margin-top: 50px;
+        }
+
+    </style>
+</head>
+<div class="container">
+    <div class="row">
+        <div class="col-12 text-center pt-5 pb-3 header">
+            <h2>Make Your Curency in Your Choice</h2><hr>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-12">
+            <form action="#">
+                <div class="row">
+                    <div class="col text-center first-input pb-3">
+                        <label for="amount">Your Amount</label><br>
+                        <input type="text" class="curr-amount" id="amount" name="curencyAmount" placeholder="Enter your amount to convert" required>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-5">
+                        <label for="pcur">Your Primary Curency</label><br>
+                        <select name="primaryCurency" class="primaryCurr" id="pcur" required>
+                            <option value="" selected disabled>Please select your primary currency</option>
+                        </select>
+                    </div>
+                    <div class="col-5 secondary">
+                        <label for="scur">Your Secondary Curency</label><br>
+                        <select name="secondaryCurency" class="secondaryCurr" id="scur" required>
+                            <option value="" selected disabled>Please select your secondary currency</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="row mt-5">
+                    <div class="col text-center">
+                        <input type="submit" value="Convert currency values">
+                    </div>
+                </div>
+            </form>
+            <div class="display">
+                <h4 style="display: none">Loadinggg......</h4>
+                <h3 style="display: none;"></h3>
+            </div>
+        </div>
+    </div>
+</div>
+<body>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+    <script src="curency-converter.js"></script>
+</body>
+</html>

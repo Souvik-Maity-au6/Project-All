@@ -1,0 +1,45 @@
+{{!---------------------------------------- Navbar 2 -------------------------------------------------}}
+
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+  <a class="navbar-brand" href="#">
+    <img src="img/logo.png" width="30px" height="30px" class="d-inline-block align-top" alt="#">
+    Footway
+  </a>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+            <li class="nav-item">
+                <a class="nav-link" href="/women">Women</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="/men">Men</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="/kids">Kids</a>
+            </li>
+        </ul>
+        <form class="form-inline my-2 my-lg-0 mr-5 pr-5" method="post" action="/search">
+            <input class="form-control mr-sm-2" type="text" name="brand" style="width: 600px;" placeholder="Search by brand name" aria-label="Search" list="brand-name">
+            <datalist id="brand-name">
+                    <option value="Adidas"></option>
+                    <option value="ASICS"></option>
+                    <option value="Bata"></option>
+                    <option value="Columbus"></option>
+                    <option value="Fila"></option>
+                    <option value="Kering (PUMA)"></option>
+                    <option value="New Balance"></option>
+                    <option value="Nike"></option>
+                    <option value="Paragon"></option>
+                    <option value="Skechers"></option>
+                </datalist>
+            <input class="btn btn-outline-success my-2 my-sm-0" type="submit" value="Search"/>
+        </form>
+        <ul class="navbar-nav">
+            <li class="nav-item cart-icon">
+                <a href="/cart/{{userId}}" class="text-light"><i class="fa fa-shopping-cart fa-lg" aria-hidden="true"></i> &nbsp;&nbsp;{{count}} items</a>
+            </li>
+        </ul>
+        <form method="POST" action="/users/logout?_method=DELETE" class="form-inline my-2 my-lg-0 ml-5 pl-5">
+            <input type="submit" class="btn btn-outline-primary my-2 my-sm-0" value="Logout"/>
+        </form>
+    </div>
+</nav>

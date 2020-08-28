@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Lato&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!---------------------------------------------- NavBar ------------------------------------------------------->
+    <div class="container-fluid">
+        <nav class="navbar navbar-expand-lg navbar-color bg-light">
+            <a class="navbar-brand" href="#">
+                <img src="img/main-logo.png" width="100" height="100" alt="Company Logo">
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+        
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item active px-2">
+                        <a class="nav-link reload" href="#">Home<span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item  px-2">
+                        <a class="nav-link" href="#">Pricing</a>
+                    </li>
+                    <li class="nav-item  px-2">
+                        <a class="nav-link" href="#">How it works</a>
+                    </li>
+                    <li class="nav-item  px-2">
+                        <a class="nav-link" href="#">FAQ</a>
+                    </li>
+                    <li class="nav-item  px-2">
+                        <a class="nav-link verticle-line" href="#">Jamie Geller Menu</a>
+                    </li>
+                </ul>
+                <ul class="navbar-nav  px-2">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#"><i class="fa fa-phone  px-1" aria-hidden="true"></i>(855)524-3318</a>
+                    </li>
+                    <li class="nav-item  px-2">
+                        <a class="nav-link verticle-line" href="#">Login</a>
+                    </li>
+                </ul>
+                <form class="form-inline my-2 my-lg-0">
+                    <button class="btn  my-2 my-sm-0 button-color" type="submit">Get Started</button>
+                </form>
+            </div>
+        </nav>
+    </div>
+    <!-------------------------------------------- Loading Wheel -------------------------------------------------->
+    <div class="loader" style="display: none;">Loading...</div>
+    <!-------------------------------------------  search box ----------------------------------------------------->
+    <div class="container-fluid search-box">
+        <div class="row search-box-row">
+            <div class="col-12">
+                <div class="header pb-3">
+                    <p>Find Your Favourite Food</p>
+                </div>
+                <form action="#" class="wrapper">
+                    <input type="text" class="input" id="fFood" name="search" placeholder="What are you looking for?" required />
+                    <button type="submit" class="searchbtn" onclick="hashChange1()"><i class="fa fa-search fa-2x" aria-hidden="true"></i></i></button>
+                </form>
+            </div>
+        </div>
+    </div>
+    <!--------------------------- Display Food Name ------------------------------>
+    <div class="container-fluid food-name-container">
+        <div class="row">
+            <div class="col-12 display">
+                <!-- <p style="display: none;" class="loading-text">Lodinggggg..........</p> -->
+                <div class="display-results">
+                    <div class="food-name-header" style="display: none;"><p>Available Foods ::</p></div>
+                    <div class=" row food-name mt-5"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!---------------------------------- Display Recipe Ingredients --------------------------------->
+    <div class="container-fluid mt-3">
+        <div class="ingredents-list" style="display: none;">
+            <h3 class="text-center py-3">Follow the process one by one :</h3><hr>
+        </div>
+    </div>
+
+
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+    <script src="app.js"></script>
+</body>
+</html>

@@ -1,0 +1,44 @@
+company-name:{{company.name}}
+<form action="/employee-dashboard" method="get"><button type="submit">join company</button></form>
+
+current employees list
+<table>
+    <th>
+    <td>name</td>
+    <td>joining date</td>
+    </th>
+    <tr>
+        {{#each currEmployees}}
+        <td>
+            {{this.name}}
+        </td>
+        <td>
+            {{this.joinedDate}}
+        </td>
+        {{/each}}
+    </tr>
+</table>
+
+
+
+past employees list
+<table>
+    <th>
+    <td>name</td>
+    <td>joining date</td>
+    <td>resigning date</td>
+    </th>
+    <tr>
+        {{#each pastEmployees}}
+        <td>
+            {{this.name}}
+        </td>
+        <td>
+            {{this.joiningDate}}
+        </td>
+        <td>
+            {{this.resigningDate}}
+        </td>
+        {{/each}}
+    </tr>
+</table>

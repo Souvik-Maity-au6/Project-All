@@ -1,0 +1,14 @@
+// User Actions
+export const SET_USER = "SET_USER";
+export const TOGGLE_AUTHENTICATING = "TOGGLE_AUTHENTICATING";
+export const LOGOUT_USER = "LOGOUT_USER";
+
+// Data actions
+
+export const SET_PRODUCTS = "SET_PRODUCTS";
+export const TOGGLE_PRODUCTS_FETCHING = "TOGGLE_PRODUCTS_FETCHING";
+export const SET_PRODUCT_DETAILS = "SET_PRODUCT_DETAILS";
+export const SET_CART_PRODUCTS = "SET_CART_PRODUCTS";
+export const REMOVE_FROM_CART = "REMOVE_FROM_CART";
+export const ADD_TO_CART = "ADD_TO_CART";
+export const SET_ORDERS = "SET_ORDERS";

@@ -1,0 +1,13 @@
+.cart-page-container{
+    min-height: calc(100vh - 100px - 30px);
+    background-color: #74d2e7;
+}
+
+.empty-message{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    
+}
